@@ -1,6 +1,6 @@
 {
   "name": "willwoodford",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A personal card for Will Woodford (@will62185)",
   "main": "index.js",
   "bin": {
@@ -26,6 +26,6 @@
   "bugs": {
     "url": "https://github.com/will62185/clicard/issues"
   },
-  "homepage": "https://github.com/will6215/clicard#readme",
+  "homepage": "https://github.com/will62185/clicard#readme",
   "author": ""
 }

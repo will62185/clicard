@@ -1,6 +1,6 @@
 # Usage
 Via npx:
 ```
-npx will
+npx willwoodford
 ```
 Forked from: https://github.com/bnb/bitandbang :smile: 
