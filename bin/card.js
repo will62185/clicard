@@ -20,7 +20,7 @@ let data = {
   'twitter': chalk.white('https://twitter.com/will62185'),
   'github': chalk.white('https://github.com/will62185'),
   //'linkedin': chalk.blue('https://linkedin.com/in/bitandbang'),
-  'web': chalk.blue('https://www.pizzatech.io'),
+  'web': chalk.white('https://www.pizzatech.io'),
  // 'npx': chalk.white('npx willwoodford'),
   'labelWork': chalk.white.bold('      Work:'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
