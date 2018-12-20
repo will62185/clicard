@@ -14,12 +14,12 @@ let options = {
 // Text + chalk definitions
 let data = {
   'name': chalk.white('Will Woodford /'),
-  'handle': chalk.cyan('will62185'),
+  'handle': chalk.blue('will62185'),
   'work': chalk.white('Cloud Platform Engineer at Ultimate Software'),
-  'twitter': chalk.cyan('https://twitter.com/will62185'),
-  'github': chalk.cyan('https://github.com/will62185'),
-  //'linkedin': chalk.cyan('https://linkedin.com/in/bitandbang'),
-  'web': chalk.cyan('https://www.pizzatech.io'),
+  'twitter': chalk.blue('https://twitter.com/will62185'),
+  'github': chalk.blue('https://github.com/will62185'),
+  //'linkedin': chalk.blue('https://linkedin.com/in/bitandbang'),
+  'web': chalk.blue('https://www.pizzatech.io'),
   'npx': chalk.white('npx will'),
   'labelWork': chalk.white.bold('      Work:'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
@@ -42,4 +42,4 @@ var carding = `${data.labelCard}  ${data.npx}`
 // Put all our output together into a single variable so we can use boxen effectively
 let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing + newline + newline + carding
 
-console.log(chalk.green(boxen(output, options)))
+console.log(chalk.blue(boxen(output, options)))
