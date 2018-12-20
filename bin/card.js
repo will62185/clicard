@@ -9,16 +9,16 @@ var boxen = require('boxen')
 let options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'round'
+  borderStyle: 'double'
 }
 // Text + chalk definitions
 let data = {
-  'name': chalk.white.bold('      Will Woodford'),
-  'title': chalk.white.bold('      Cloud Platform Engineer'),
+  'name': chalk.white.bold('Will Woodford'),
+  'title': chalk.white.bold('Cloud Platform Engineer'),
   //'handle': chalk.blue('will62185'),
   'work': chalk.green('Ultimate Software'),
-  'twitter': chalk.blue('https://twitter.com/will62185'),
-  'github': chalk.magenta('https://github.com/will62185'),
+  'twitter': chalk.white('https://twitter.com/will62185'),
+  'github': chalk.white('https://github.com/will62185'),
   //'linkedin': chalk.blue('https://linkedin.com/in/bitandbang'),
   'web': chalk.blue('https://www.pizzatech.io'),
  // 'npx': chalk.white('npx willwoodford'),
@@ -32,7 +32,8 @@ let data = {
 
 // Actual strings we're going to output
 var newline = '\n'
-var heading = `${data.name} ${data.title}`
+var heading = `${data.name}`
+var title = `${data.title}`
 var working = `${data.labelWork}  ${data.work}`
 var twittering = `${data.labelTwitter}  ${data.twitter}`
 var githubing = `${data.labelGitHub}  ${data.github}`
@@ -41,6 +42,6 @@ var webing = `${data.labelWeb}  ${data.web}`
 //var carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing + newline //+ newline + carding
+let output = heading + newline + title + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing //+ newline //+ newline + carding
 
-console.log(chalk.blue(boxen(output, options)))
+console.log(chalk.white.bold(boxen(output, options)))
