@@ -18,7 +18,7 @@ let data = {
   //'handle': chalk.blue('will62185'),
   'work': chalk.green('Ultimate Software'),
   'twitter': chalk.blue('https://twitter.com/will62185'),
-  'github': chalk.purple('https://github.com/will62185'),
+  'github': chalk.magenta('https://github.com/will62185'),
   //'linkedin': chalk.blue('https://linkedin.com/in/bitandbang'),
   'web': chalk.blue('https://www.pizzatech.io'),
  // 'npx': chalk.white('npx willwoodford'),
