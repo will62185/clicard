@@ -9,7 +9,7 @@ var boxen = require('boxen')
 let options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'double'
+  borderStyle: 'single-double'
 }
 // Text + chalk definitions
 let data = {
@@ -44,4 +44,4 @@ var webing = `${data.labelWeb}  ${data.web}`
 // Put all our output together into a single variable so we can use boxen effectively
 let output = heading + newline + title + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing //+ newline //+ newline + carding
 
-console.log(chalk.white.bold(boxen(output, options)))
+console.log(chalk.white(boxen(output, options)))
