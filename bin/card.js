@@ -13,13 +13,14 @@ let options = {
 }
 // Text + chalk definitions
 let data = {
-  'name': chalk.white.bold('Will Woodford'),
+  'name': chalk.white.bold('      Will Woodford'),
+  'title': chalk.white.bold('      Cloud Platform Engineer'),
   //'handle': chalk.blue('will62185'),
-  'work': chalk.white('Cloud Platform Engineer @ Ultimate Software'),
+  'work': chalk.green('Ultimate Software'),
   'twitter': chalk.blue('https://twitter.com/will62185'),
-  'github': chalk.blue('https://github.com/will62185'),
+  'github': chalk.purple('https://github.com/will62185'),
   //'linkedin': chalk.blue('https://linkedin.com/in/bitandbang'),
-  '🍕': chalk.blue('https://www.pizzatech.io'),
+  'web': chalk.blue('https://www.pizzatech.io'),
  // 'npx': chalk.white('npx willwoodford'),
   'labelWork': chalk.white.bold('      Work:'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
@@ -31,7 +32,7 @@ let data = {
 
 // Actual strings we're going to output
 var newline = '\n'
-var heading = `${data.name} ${data.handle}`
+var heading = `${data.name} ${data.title}`
 var working = `${data.labelWork}  ${data.work}`
 var twittering = `${data.labelTwitter}  ${data.twitter}`
 var githubing = `${data.labelGitHub}  ${data.github}`
@@ -42,4 +43,4 @@ var webing = `${data.labelWeb}  ${data.web}`
 // Put all our output together into a single variable so we can use boxen effectively
 let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing + newline //+ newline + carding
 
-console.log(chalk.green(boxen(output, options)))
+console.log(chalk.blue(boxen(output, options)))
