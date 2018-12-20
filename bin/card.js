@@ -13,20 +13,20 @@ let options = {
 }
 // Text + chalk definitions
 let data = {
-  'name': chalk.white('Will Woodford /'),
-  'handle': chalk.blue('will62185'),
-  'work': chalk.white('Cloud Platform Engineer at Ultimate Software'),
+  'name': chalk.white.bold('Will Woodford'),
+  //'handle': chalk.blue('will62185'),
+  'work': chalk.white('Cloud Platform Engineer @ Ultimate Software'),
   'twitter': chalk.blue('https://twitter.com/will62185'),
   'github': chalk.blue('https://github.com/will62185'),
   //'linkedin': chalk.blue('https://linkedin.com/in/bitandbang'),
-  'web': chalk.blue('https://www.pizzatech.io'),
-  'npx': chalk.white('npx will'),
+  '🍕': chalk.blue('https://www.pizzatech.io'),
+ // 'npx': chalk.white('npx willwoodford'),
   'labelWork': chalk.white.bold('      Work:'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
   'labelGitHub': chalk.white.bold('    GitHub:'),
   //'labelLinkedIn': chalk.white.bold('  LinkedIn:'),
   'labelWeb': chalk.white.bold('       Web:'),
-  'labelCard': chalk.white.bold('      Card:')
+  //'labelCard': chalk.white.bold('      Card:')
 }
 
 // Actual strings we're going to output
@@ -37,9 +37,9 @@ var twittering = `${data.labelTwitter}  ${data.twitter}`
 var githubing = `${data.labelGitHub}  ${data.github}`
 //var linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 var webing = `${data.labelWeb}  ${data.web}`
-var carding = `${data.labelCard}  ${data.npx}`
+//var carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing + newline + newline + carding
+let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + /*linkedining + newline +*/ webing + newline //+ newline + carding
 
-console.log(chalk.blue(boxen(output, options)))
+console.log(chalk.green(boxen(output, options)))
