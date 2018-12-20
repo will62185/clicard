@@ -1,10 +1,10 @@
 {
-  "name": "will",
-  "version": "1.1.0",
+  "name": "willwoodford",
+  "version": "0.1.0",
   "description": "A personal card for Will Woodford (@will62185)",
   "main": "index.js",
   "bin": {
-    "will": "./bin/card.js"
+    "willwoodford": "./bin/card.js"
   },
   "repository": {
     "type": "git",
