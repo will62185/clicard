@@ -14,7 +14,7 @@ let options = {
 // Text + chalk definitions
 let data = {
   'name': chalk.white.bold('Will Woodford'),
-  'title': chalk.white.bold('Cloud Platform Engineer'),
+  'title': chalk.gray.bold('Cloud Platform Engineer'),
   //'handle': chalk.blue('will62185'),
   'work': chalk.green('Ultimate Software'),
   'twitter': chalk.white('https://twitter.com/will62185'),
